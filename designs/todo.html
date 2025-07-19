@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#1a1a1a] dark justify-between group/design-root overflow-x-hidden"
+      style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e'); font-family: Inter, &quot;Noto Sans&quot;, sans-serif;"
+    >
+      <div>
+        <div class="flex items-center bg-[#1a1a1a] p-4 pb-2 justify-between">
+          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Board</h2>
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+            >
+              <div class="text-white" data-icon="Plus" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+          <label class="flex flex-col min-w-40 flex-1">
+            <input
+              placeholder="Add a task"
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#363636] focus:border-none h-14 placeholder:text-[#adadad] p-4 text-base font-normal leading-normal"
+              value=""
+            />
+          </label>
+        </div>
+        <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">To-Do</h3>
+        <div class="flex items-center gap-4 bg-[#1a1a1a] px-4 min-h-14 justify-between">
+          <p class="text-white text-base font-normal leading-normal flex-1 truncate">Draft project proposal</p>
+          <div class="shrink-0">
+            <div class="flex size-7 items-center justify-center">
+              <input
+                type="checkbox"
+                class="h-5 w-5 rounded border-[#4d4d4d] border-2 bg-transparent text-black checked:bg-black checked:border-black checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#4d4d4d] focus:outline-none"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#1a1a1a] px-4 min-h-14 justify-between">
+          <p class="text-white text-base font-normal leading-normal flex-1 truncate">Schedule team meeting</p>
+          <div class="shrink-0">
+            <div class="flex size-7 items-center justify-center">
+              <input
+                type="checkbox"
+                class="h-5 w-5 rounded border-[#4d4d4d] border-2 bg-transparent text-black checked:bg-black checked:border-black checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#4d4d4d] focus:outline-none"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#1a1a1a] px-4 min-h-14 justify-between">
+          <p class="text-white text-base font-normal leading-normal flex-1 truncate">Review design mockups</p>
+          <div class="shrink-0">
+            <div class="flex size-7 items-center justify-center">
+              <input
+                type="checkbox"
+                class="h-5 w-5 rounded border-[#4d4d4d] border-2 bg-transparent text-black checked:bg-black checked:border-black checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#4d4d4d] focus:outline-none"
+              />
+            </div>
+          </div>
+        </div>
+        <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Completed</h3>
+        <div class="flex items-center gap-4 bg-[#1a1a1a] px-4 min-h-14 justify-between">
+          <p class="text-white text-base font-normal leading-normal flex-1 truncate">Finalize budget report</p>
+          <div class="shrink-0">
+            <div class="flex size-7 items-center justify-center">
+              <input
+                type="checkbox"
+                class="h-5 w-5 rounded border-[#4d4d4d] border-2 bg-transparent text-black checked:bg-black checked:border-black checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#4d4d4d] focus:outline-none"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#1a1a1a] px-4 min-h-14 justify-between">
+          <p class="text-white text-base font-normal leading-normal flex-1 truncate">Send client update</p>
+          <div class="shrink-0">
+            <div class="flex size-7 items-center justify-center">
+              <input
+                type="checkbox"
+                class="h-5 w-5 rounded border-[#4d4d4d] border-2 bg-transparent text-black checked:bg-black checked:border-black checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#4d4d4d] focus:outline-none"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex gap-2 border-t border-[#363636] bg-neutral-800 px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-white" href="#">
+            <div class="text-white flex h-8 items-center justify-center" data-icon="Kanban" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M160,56v96a8,8,0,0,1-8,8H112a8,8,0,0,1-8-8V56a8,8,0,0,1,8-8h40A8,8,0,0,1,160,56Zm64-8H184a8,8,0,0,0-8,8v48a8,8,0,0,0,8,8h40a8,8,0,0,0,8-8V56A8,8,0,0,0,224,48Zm0,80H184a8,8,0,0,0-8,8v40a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16V136A8,8,0,0,0,224,128ZM80,48H40a8,8,0,0,0-8,8v48a8,8,0,0,0,8,8H80a8,8,0,0,0,8-8V56A8,8,0,0,0,80,48Zm0,80H40a8,8,0,0,0-8,8v72a16,16,0,0,0,16,16H72a16,16,0,0,0,16-16V136A8,8,0,0,0,80,128Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#adadad]" href="#">
+            <div class="text-[#adadad] flex h-8 items-center justify-center" data-icon="Timer" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M128,40a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,40Zm0,176a80,80,0,1,1,80-80A80.09,80.09,0,0,1,128,216ZM173.66,90.34a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32l40-40A8,8,0,0,1,173.66,90.34ZM96,16a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,16Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#adadad]" href="#">
+            <div class="text-[#adadad] flex h-8 items-center justify-center" data-icon="ListBullets" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#adadad]" href="#">
+            <div class="text-[#adadad] flex h-8 items-center justify-center" data-icon="MagicWand" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M48,64a8,8,0,0,1,8-8H72V40a8,8,0,0,1,16,0V56h16a8,8,0,0,1,0,16H88V88a8,8,0,0,1-16,0V72H56A8,8,0,0,1,48,64ZM184,192h-8v-8a8,8,0,0,0-16,0v8h-8a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0v-8h8a8,8,0,0,0,0-16Zm56-48H224V128a8,8,0,0,0-16,0v16H192a8,8,0,0,0,0,16h16v16a8,8,0,0,0,16,0V160h16a8,8,0,0,0,0-16ZM219.31,80,80,219.31a16,16,0,0,1-22.62,0L36.68,198.63a16,16,0,0,1,0-22.63L176,36.69a16,16,0,0,1,22.63,0l20.68,20.68A16,16,0,0,1,219.31,80Zm-54.63,32L144,91.31l-96,96L68.68,208ZM208,68.69,187.31,48l-32,32L176,100.69Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="h-5 bg-neutral-800"></div>
+      </div>
+    </div>
+  </body>
+</html>

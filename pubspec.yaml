@@ -1,0 +1,66 @@
+name: zenith
+description: "Minimalist Personal Productivity App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+  flutter: ">=3.13.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  
+  # Database
+  sqflite: ^2.3.0
+  sqflite_common_ffi: ^2.3.0
+  sqflite_common_ffi_web: ^0.4.2+1
+  path: ^1.8.3
+  
+  # HTTP Client
+  http: ^1.1.0
+  
+  # UI Components
+  cupertino_icons: ^1.0.2
+  flutter_markdown: ^0.6.18
+  
+  # Audio and Notifications
+  audioplayers: ^5.2.1
+  flutter_local_notifications: ^17.2.2
+  permission_handler: ^11.3.1
+  timezone: ^0.9.4
+  wakelock_plus: ^1.2.5
+  
+  # Utils
+  intl: ^0.18.1
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sounds/
+    - assets/icon/
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+  macos:
+    generate: true
+    image_path: "assets/icon/app_icon.png" 
